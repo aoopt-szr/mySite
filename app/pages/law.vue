@@ -1,7 +1,7 @@
 <template>
-  <div class="law-page">
+  <div class="law-page" data-page="law">
     <!-- Hero Section -->
-    <section class="bg-gradient-to-br from-blue-700 to-blue-900 text-white py-16">
+    <section class="law-hero bg-gradient-to-br from-blue-700 to-blue-900 text-white py-16" data-section="hero">
       <div class="container mx-auto px-4 max-w-6xl">
         <h1 class="text-4xl md:text-5xl font-bold mb-4">
           Юридическая практика
@@ -10,7 +10,7 @@
     </section>
 
     <!-- Content Section -->
-    <section class="py-16 bg-white">
+    <section class="law-content py-16 bg-white" data-section="content">
       <div class="container mx-auto px-4 max-w-6xl">
         <div class="prose prose-lg max-w-none mb-12">
           <p class="text-lg text-gray-700 leading-relaxed mb-6">
@@ -31,7 +31,7 @@
         </div>
 
         <!-- Examples Section -->
-        <div class="mt-16">
+        <div class="law-examples mt-16" data-section="examples">
           <h2 class="text-3xl font-bold mb-8 text-gray-800">
             Примеры из практики
           </h2>
@@ -44,7 +44,7 @@
         </div>
 
         <!-- Contact Section -->
-        <div class="mt-12 bg-gradient-to-br from-blue-50 to-blue-100 rounded-lg p-8 border-l-4 border-blue-600">
+        <div class="law-contact mt-12 bg-gradient-to-br from-blue-50 to-blue-100 rounded-lg p-8 border-l-4 border-blue-600" data-section="contact">
           <h3 class="text-2xl font-bold mb-4 text-gray-800">
             Нужна консультация?
           </h3>
@@ -63,7 +63,7 @@
     </section>
 
     <!-- Back to Specialist Section -->
-    <section class="py-8 bg-gray-100">
+    <section class="law-navigation py-8 bg-gray-100" data-section="navigation">
       <div class="container mx-auto px-4 max-w-6xl">
         <NuxtLink 
           to="/specialist" 

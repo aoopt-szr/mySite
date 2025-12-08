@@ -1,9 +1,9 @@
 <template>
-  <header class="bg-[#52894A] sticky top-0 z-50 font-sans">
+  <header class="site-header bg-[#52894A] sticky top-0 z-50 font-sans" data-component="header">
     <div class="container mx-auto px-4 py-3">
-      <div class="flex justify-between items-center">
+      <div class="header-wrapper flex justify-between items-center">
         <!-- Logo Section -->
-        <NuxtLink to="/" class="flex items-center gap-3">
+        <NuxtLink to="/" class="site-logo flex items-center gap-3" data-element="logo">
           <div class="w-10 h-10 bg-[#3D7C3B] rounded-full flex items-center justify-center">
             <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 20 20">
               <path d="M10 2a6 6 0 00-6 6v3.586l-.707.707A1 1 0 004 14h12a1 1 0 00.707-1.707L16 11.586V8a6 6 0 00-6-6zM10 18a3 3 0 01-3-3h6a3 3 0 01-3 3z"/>
@@ -16,12 +16,12 @@
         </NuxtLink>
 
         <!-- Desktop Navigation -->
-        <nav class="hidden lg:flex items-center space-x-1">
+        <nav class="desktop-nav hidden lg:flex items-center space-x-1" data-element="navigation">
           <NuxtLink to="/" class="px-4 py-2 text-white hover:bg-[#3D7C3B] font-medium uppercase text-xs transition rounded">Главная</NuxtLink>
           <NuxtLink to="/about" class="px-4 py-2 text-white hover:bg-[#3D7C3B] font-medium uppercase text-xs transition rounded">О Нас</NuxtLink>
           <NuxtLink to="/news" class="px-4 py-2 text-white hover:bg-[#3D7C3B] font-medium uppercase text-xs transition rounded">Новости</NuxtLink>
           
-          <div class="relative group">
+          <div class="nav-dropdown relative group" data-dropdown="specialist">
             <NuxtLink to="/specialist" class="px-4 py-2 text-white hover:bg-[#3D7C3B] font-medium uppercase text-xs transition rounded flex items-center gap-1">
               Специалисту
               <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
@@ -40,7 +40,7 @@
         </nav>
 
         <!-- Mobile Menu Button -->
-        <button @click="isMobileMenuOpen = !isMobileMenuOpen" class="lg:hidden text-white focus:outline-none">
+        <button @click="isMobileMenuOpen = !isMobileMenuOpen" class="mobile-menu-toggle lg:hidden text-white focus:outline-none" data-element="mobile-toggle">
           <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path v-if="!isMobileMenuOpen" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
             <path v-else stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
@@ -49,7 +49,7 @@
       </div>
 
       <!-- Mobile Menu -->
-      <div v-if="isMobileMenuOpen" class="lg:hidden mt-3 pb-3 border-t border-[#3D7C3B] pt-3">
+      <div v-if="isMobileMenuOpen" class="mobile-menu lg:hidden mt-3 pb-3 border-t border-[#3D7C3B] pt-3" data-element="mobile-menu">
         <div class="flex flex-col space-y-1">
           <NuxtLink to="/" class="block py-2 px-4 text-white hover:bg-[#3D7C3B] font-medium uppercase text-xs rounded">Главная</NuxtLink>
           <NuxtLink to="/about" class="block py-2 px-4 text-white hover:bg-[#3D7C3B] font-medium uppercase text-xs rounded">О Нас</NuxtLink>

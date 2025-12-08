@@ -1,7 +1,7 @@
 <template>
-  <div class="eco-expeditions-page">
+  <div class="eco-expeditions-page" data-page="eco-expeditions">
     <!-- Hero Section -->
-    <section class="bg-gradient-to-br from-teal-700 to-teal-900 text-white py-16">
+    <section class="expeditions-hero bg-gradient-to-br from-teal-700 to-teal-900 text-white py-16" data-section="hero">
       <div class="container mx-auto px-4 max-w-6xl">
         <h1 class="text-4xl md:text-5xl font-bold mb-4">
           Площадки для экспедиций
@@ -10,7 +10,7 @@
     </section>
 
     <!-- Content Section -->
-    <section class="py-16 bg-white">
+    <section class="expeditions-content py-16 bg-white" data-section="content">
       <div class="container mx-auto px-4 max-w-6xl">
         <div class="prose prose-lg max-w-none mb-12">
           <p class="text-lg text-gray-700 leading-relaxed mb-6">
@@ -23,7 +23,7 @@
         </div>
 
         <!-- Documents Section -->
-        <div class="bg-teal-50 border-l-4 border-teal-600 rounded-lg p-8 mb-12">
+        <div class="expeditions-documents bg-teal-50 border-l-4 border-teal-600 rounded-lg p-8 mb-12" data-section="documents">
           <h3 class="text-xl font-bold mb-4 text-gray-800">
             Документы и материалы
           </h3>
@@ -76,8 +76,8 @@
         </div>
 
         <!-- Info Section -->
-        <div class="grid md:grid-cols-2 gap-8 mb-12">
-          <div class="bg-white border-2 border-teal-200 rounded-lg p-6">
+        <div class="expeditions-info grid md:grid-cols-2 gap-8 mb-12" data-section="info">
+          <div class="info-card bg-white border-2 border-teal-200 rounded-lg p-6" data-info="target-audience">
             <div class="flex items-center mb-4">
               <div class="bg-teal-600 rounded-full p-3 mr-4">
                 <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -92,7 +92,7 @@
             </p>
           </div>
 
-          <div class="bg-white border-2 border-teal-200 rounded-lg p-6">
+          <div class="info-card bg-white border-2 border-teal-200 rounded-lg p-6" data-info="conditions">
             <div class="flex items-center mb-4">
               <div class="bg-teal-600 rounded-full p-3 mr-4">
                 <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -109,7 +109,7 @@
         </div>
 
         <!-- Contact Section -->
-        <div class="bg-gradient-to-br from-teal-50 to-teal-100 rounded-lg p-8 border-l-4 border-teal-600">
+        <div class="expeditions-cta bg-gradient-to-br from-teal-50 to-teal-100 rounded-lg p-8 border-l-4 border-teal-600" data-section="cta">
           <h3 class="text-2xl font-bold mb-4 text-gray-800">
             Планируете экспедицию?
           </h3>
@@ -127,7 +127,7 @@
     </section>
 
     <!-- Back to Specialist Section -->
-    <section class="py-8 bg-gray-100">
+    <section class="expeditions-navigation py-8 bg-gray-100" data-section="navigation">
       <div class="container mx-auto px-4 max-w-6xl">
         <NuxtLink 
           to="/specialist" 

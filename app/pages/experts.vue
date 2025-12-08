@@ -1,7 +1,7 @@
 <template>
-  <div class="experts-page">
+  <div class="experts-page" data-page="experts">
     <!-- Hero Section -->
-    <section class="bg-gradient-to-br from-purple-700 to-purple-900 text-white py-16">
+    <section class="experts-hero bg-gradient-to-br from-purple-700 to-purple-900 text-white py-16" data-section="hero">
       <div class="container mx-auto px-4 max-w-6xl">
         <h1 class="text-4xl md:text-5xl font-bold mb-4">
           База научных сотрудников
@@ -10,7 +10,7 @@
     </section>
 
     <!-- Content Section -->
-    <section class="py-16 bg-white">
+    <section class="experts-content py-16 bg-white" data-section="content">
       <div class="container mx-auto px-4 max-w-6xl">
         <div class="prose prose-lg max-w-none mb-12">
           <p class="text-lg text-gray-700 leading-relaxed mb-6">
@@ -29,9 +29,9 @@
         </div>
 
         <!-- Experts Grid -->
-        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
+        <div class="experts-grid grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12" data-section="experts-list">
           <!-- Expert 1 -->
-          <div class="bg-white border-2 border-purple-200 rounded-lg p-6 hover:border-purple-400 transition-colors">
+          <div class="expert-card bg-white border-2 border-purple-200 rounded-lg p-6 hover:border-purple-400 transition-colors" data-expert="shubnitsyna">
             <h3 class="text-lg font-bold text-gray-800 mb-2">
               Шубницина Елена Игоревна
             </h3>
@@ -50,7 +50,7 @@
           </div>
 
           <!-- Expert 2 -->
-          <div class="bg-white border-2 border-purple-200 rounded-lg p-6 hover:border-purple-400 transition-colors">
+          <div class="expert-card bg-white border-2 border-purple-200 rounded-lg p-6 hover:border-purple-400 transition-colors" data-expert="kulebyakina">
             <h3 class="text-lg font-bold text-gray-800 mb-2">
               Кулебякина Елена Викторовна
             </h3>
@@ -68,7 +68,7 @@
           </div>
 
           <!-- Expert 3 -->
-          <div class="bg-white border-2 border-purple-200 rounded-lg p-6 hover:border-purple-400 transition-colors">
+          <div class="expert-card bg-white border-2 border-purple-200 rounded-lg p-6 hover:border-purple-400 transition-colors" data-expert="karpachev">
             <h3 class="text-lg font-bold text-gray-800 mb-2">
               Карпачев Андрей Петрович
             </h3>
@@ -87,7 +87,7 @@
           </div>
 
           <!-- Expert 4 -->
-          <div class="bg-white border-2 border-purple-200 rounded-lg p-6 hover:border-purple-400 transition-colors">
+          <div class="expert-card bg-white border-2 border-purple-200 rounded-lg p-6 hover:border-purple-400 transition-colors" data-expert="mamontov">
             <h3 class="text-lg font-bold text-gray-800 mb-2">
               Мамонтов Виктор Николаевич
             </h3>
@@ -105,7 +105,7 @@
           </div>
 
           <!-- Expert 5 -->
-          <div class="bg-white border-2 border-purple-200 rounded-lg p-6 hover:border-purple-400 transition-colors">
+          <div class="expert-card bg-white border-2 border-purple-200 rounded-lg p-6 hover:border-purple-400 transition-colors" data-expert="zheltukhin">
             <h3 class="text-lg font-bold text-gray-800 mb-2">
               Желтухин Анатолий Семенович
             </h3>
@@ -123,7 +123,7 @@
           </div>
 
           <!-- Expert 6 -->
-          <div class="bg-white border-2 border-purple-200 rounded-lg p-6 hover:border-purple-400 transition-colors">
+          <div class="expert-card bg-white border-2 border-purple-200 rounded-lg p-6 hover:border-purple-400 transition-colors" data-expert="khokhryakov">
             <h3 class="text-lg font-bold text-gray-800 mb-2">
               Хохряков Владимир Рафаэльевич
             </h3>
@@ -143,7 +143,7 @@
         </div>
 
         <!-- Add Your Info Section -->
-        <div class="bg-gradient-to-br from-purple-50 to-purple-100 rounded-lg p-8 border-l-4 border-purple-600">
+        <div class="experts-cta bg-gradient-to-br from-purple-50 to-purple-100 rounded-lg p-8 border-l-4 border-purple-600" data-section="cta">
           <h3 class="text-2xl font-bold mb-4 text-gray-800">
             Добавить информацию о себе
           </h3>
@@ -162,7 +162,7 @@
     </section>
 
     <!-- Back to Specialist Section -->
-    <section class="py-8 bg-gray-100">
+    <section class="experts-navigation py-8 bg-gray-100" data-section="navigation">
       <div class="container mx-auto px-4 max-w-6xl">
         <NuxtLink 
           to="/specialist" 

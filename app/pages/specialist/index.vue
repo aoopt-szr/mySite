@@ -1,7 +1,7 @@
 <template>
-  <div class="specialist-page">
+  <div class="specialist-page" data-page="specialist">
     <!-- Hero Section -->
-    <section class="bg-gradient-to-br from-green-700 to-green-900 text-white py-20">
+    <section class="specialist-hero bg-gradient-to-br from-green-700 to-green-900 text-white py-20" data-section="hero">
       <div class="container mx-auto px-4 max-w-6xl">
         <h1 class="text-4xl md:text-5xl font-bold mb-6">
           Для специалистов ООПТ
@@ -13,7 +13,7 @@
     </section>
 
     <!-- Description Section -->
-    <section class="py-16 bg-white">
+    <section class="specialist-description py-16 bg-white" data-section="description">
       <div class="container mx-auto px-4 max-w-6xl">
         <div class="prose prose-lg max-w-none">
           <p class="text-lg text-gray-700 leading-relaxed mb-6">
@@ -32,17 +32,18 @@
     </section>
 
     <!-- Resource Cards Section -->
-    <section class="py-16 bg-gray-50">
+    <section class="specialist-resources py-16 bg-gray-50" data-section="resources">
       <div class="container mx-auto px-4 max-w-6xl">
         <h2 class="text-3xl font-bold text-center mb-12 text-gray-800">
           Ресурсы для специалистов
         </h2>
         
-        <div class="grid md:grid-cols-3 gap-8">
+        <div class="specialist-cards grid md:grid-cols-3 gap-8">
           <!-- Legal Practice Card -->
           <NuxtLink 
             to="/law" 
-            class="bg-white rounded-lg shadow-lg p-8 hover:shadow-xl transition-shadow duration-300 flex flex-col"
+            class="resource-card bg-white rounded-lg shadow-lg p-8 hover:shadow-xl transition-shadow duration-300 flex flex-col"
+            data-resource="law"
           >
             <div class="text-green-600 mb-4">
               <svg class="w-12 h-12" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -64,7 +65,8 @@
           <!-- Researchers Database Card -->
           <NuxtLink 
             to="/experts" 
-            class="bg-white rounded-lg shadow-lg p-8 hover:shadow-xl transition-shadow duration-300 flex flex-col"
+            class="resource-card bg-white rounded-lg shadow-lg p-8 hover:shadow-xl transition-shadow duration-300 flex flex-col"
+            data-resource="experts"
           >
             <div class="text-green-600 mb-4">
               <svg class="w-12 h-12" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -86,7 +88,8 @@
           <!-- Expedition Sites Card -->
           <NuxtLink 
             to="/eco-expeditions" 
-            class="bg-white rounded-lg shadow-lg p-8 hover:shadow-xl transition-shadow duration-300 flex flex-col"
+            class="resource-card bg-white rounded-lg shadow-lg p-8 hover:shadow-xl transition-shadow duration-300 flex flex-col"
+            data-resource="expeditions"
           >
             <div class="text-green-600 mb-4">
               <svg class="w-12 h-12" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -111,7 +114,7 @@
     </section>
 
     <!-- Stats Section -->
-    <section class="py-16 bg-green-800 text-white">
+    <section class="specialist-stats py-16 bg-green-800 text-white" data-section="stats">
       <div class="container mx-auto px-4 max-w-6xl">
         <div class="grid grid-cols-2 md:grid-cols-5 gap-8 text-center">
           <div>

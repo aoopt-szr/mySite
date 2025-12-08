@@ -1,5 +1,5 @@
 <template>
-  <section class="py-16 bg-gray-100">
+  <section class="map-section py-16 bg-gray-100" data-component="map">
     <div class="container mx-auto px-4">
       <div class="text-center mb-8">
         <h2 class="text-3xl font-bold text-gray-400 mb-4 uppercase relative inline-block">

@@ -1,10 +1,10 @@
 <template>
-  <div>
-    <HeroSection />
-    <NewsSection />
-    <StatsSection />
-    <MapSection />
-    <ContactsSection />
+  <div class="home-page" data-page="home">
+    <HeroSection data-section="hero" />
+    <NewsSection data-section="news" />
+    <StatsSection data-section="stats" />
+    <MapSection data-section="map" />
+    <ContactsSection data-section="contacts" />
   </div>
 </template>
 

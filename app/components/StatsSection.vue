@@ -1,5 +1,5 @@
 <template>
-  <section class="py-20 bg-white">
+  <section class="stats-section py-20 bg-white" data-component="stats">
     <div class="container mx-auto px-4">
       
       <!-- About Text with Buttons and Image -->
