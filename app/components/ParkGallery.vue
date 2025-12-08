@@ -15,7 +15,7 @@
           rel="noopener noreferrer"
           class="park-card group relative overflow-hidden rounded-lg shadow-md hover:shadow-xl transition-all duration-300 aspect-[4/3]"
         >
-          <img 
+          <NuxtImg 
             :src="park.image" 
             :alt="park.name"
             class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"

@@ -2,7 +2,7 @@
   <section class="hero-section relative h-[500px] w-full bg-gray-900 text-white overflow-hidden" data-component="hero">
     <!-- Background Image with Overlay -->
     <div class="absolute inset-0">
-      <img 
+      <NuxtImg 
         src="/images/hero-wildlife.jpg" 
         alt="Wildlife background" 
         class="w-full h-full object-cover"

@@ -43,7 +43,7 @@
         
         <!-- Right Column: Image -->
         <div class="hero-image">
-          <img 
+          <NuxtImg 
             :src="imageUrl" 
             :alt="imageAlt"
             class="image"

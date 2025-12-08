@@ -5,7 +5,7 @@
         <!-- Logo Section -->
         <NuxtLink to="/" class="site-logo flex items-center gap-3" data-element="logo">
           <div class="w-10 h-10 bg-[#3D7C3B] rounded-full flex items-center justify-center">
-            <img 
+            <NuxtImg 
               src="/images/logo.png"
               alt="logo"
           />

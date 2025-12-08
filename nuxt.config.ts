@@ -11,7 +11,8 @@ export default defineNuxtConfig({
   modules: [
     '@nuxt/content',
     'nuxt-studio',
-    '@nuxtjs/tailwindcss'
+    '@nuxtjs/tailwindcss',
+    '@nuxt/image'
   ],
 
   // Fix for nuxt-studio H3Error

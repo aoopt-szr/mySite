@@ -33,7 +33,7 @@
           
           <!-- Right: Image -->
           <div class="lg:w-1/2">
-            <img 
+            <NuxtImg 
               src="/images/team-nature.jpg" 
               alt="Team working in nature" 
               class="w-full h-auto rounded-lg shadow-lg"

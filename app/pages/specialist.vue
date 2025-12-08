@@ -26,10 +26,13 @@
             data-resource="law"
           >
             <!-- Background Image -->
-            <div 
-              class="absolute inset-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-110"
-              style="background-image: url('/images/gallery/gallery-01.png')"
-            ></div>
+            <div class="absolute inset-0 transition-transform duration-500 group-hover:scale-110">
+              <NuxtImg
+                src="/images/gallery/gallery-01.png"
+                alt="Юридическая практика"
+                class="w-full h-full object-cover"
+              />
+            </div>
             
             <!-- Overlay -->
             <div class="absolute inset-0 bg-gradient-to-b from-black/40 via-black/50 to-black/70 transition-opacity duration-300 group-hover:bg-black/60"></div>
@@ -52,10 +55,13 @@
             data-resource="experts"
           >
             <!-- Background Image -->
-            <div 
-              class="absolute inset-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-110"
-              style="background-image: url('/images/gallery/gallery-10.png')"
-            ></div>
+            <div class="absolute inset-0 transition-transform duration-500 group-hover:scale-110">
+              <NuxtImg
+                src="/images/gallery/gallery-10.png"
+                alt="База научных сотрудников"
+                class="w-full h-full object-cover"
+              />
+            </div>
             
             <!-- Overlay -->
             <div class="absolute inset-0 bg-gradient-to-b from-black/40 via-black/50 to-black/70 transition-opacity duration-300 group-hover:bg-black/60"></div>
@@ -78,10 +84,13 @@
             data-resource="expeditions"
           >
             <!-- Background Image -->
-            <div 
-              class="absolute inset-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-110"
-              style="background-image: url('/images/gallery/gallery-18.png')"
-            ></div>
+            <div class="absolute inset-0 transition-transform duration-500 group-hover:scale-110">
+              <NuxtImg
+                src="/images/gallery/gallery-18.png"
+                alt="Площадки для экспедиций"
+                class="w-full h-full object-cover"
+              />
+            </div>
             
             <!-- Overlay -->
             <div class="absolute inset-0 bg-gradient-to-b from-black/40 via-black/50 to-black/70 transition-opacity duration-300 group-hover:bg-black/60"></div>
