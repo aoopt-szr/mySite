@@ -1,9 +1,4 @@
-export interface Park {
-  id: number
-  name: string
-  image: string
-  url: string
-}
+import type { Park } from '~/types/park'
 
 export const useVolunteerParks = () => {
   const parks: Park[] = [

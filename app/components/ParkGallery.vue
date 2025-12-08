@@ -4,8 +4,9 @@
     :data-component="componentId"
   >
     <div class="container mx-auto px-4 max-w-7xl">
-      <h2 class="text-3xl md:text-6xl font-bold text-gray-800 text-center mb-4">
+      <h2 class="text-3xl md:text-6xl text-center font-bold text-gray-400 mb-12 uppercase relative inline-block">
         {{ title }}
+        <span class="absolute -bottom-3 left-1/2 transform -translate-x-1/2 w-16 h-2 bg-cyan-400"></span>
       </h2>
       
       <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4">
@@ -35,12 +36,7 @@
 </template>
 
 <script setup lang="ts">
-interface Park {
-  id: number
-  name: string
-  image: string
-  url: string
-}
+import type { Park } from '~/types/park'
 
 interface Props {
   title: string

@@ -25,6 +25,7 @@ npm run build
   - `pages/` - Vue page components (auto-routed)
   - `components/` - Reusable Vue components
   - `composables/` - Composable functions for shared logic
+  - `types/` - TypeScript type definitions and interfaces
   - `layouts/` - Layout templates
 - `content/` - Markdown content files
 - `public/` - Static assets
