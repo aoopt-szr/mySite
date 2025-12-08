@@ -16,10 +16,7 @@
               </button>
             </div>
             
-            <h2 class="text-3xl md:text-6xl font-bold text-gray-400 mb-4 uppercase relative inline-block">
-              О Нас
-              <span class="absolute -bottom-3 left-0 w-16 h-2 bg-cyan-400"></span>
-            </h2>
+            <SectionHeading title="О Нас" spacing="sm" container-class="text-left" />
             
             <div class="text-gray-600 leading-relaxed space-y-4 mt-6">
               <p>

@@ -1,12 +1,7 @@
 <template>
   <section class="news-section py-16 bg-gray-50" data-component="news">
     <div class="container mx-auto px-4">
-      <div class="text-center mb-12">
-        <h2 class="text-3xl md:text-6xl font-bold text-gray-400 mb-4 uppercase relative inline-block">
-          Новости
-          <span class="absolute -bottom-3 left-1/2 transform -translate-x-1/2 w-16 h-2 bg-cyan-400"></span>
-        </h2>
-      </div>
+      <SectionHeading title="Новости" spacing="lg" container-class="mb-12" />
 
       <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
         <article 

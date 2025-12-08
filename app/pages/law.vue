@@ -32,9 +32,7 @@
 
         <!-- Examples Section -->
         <div class="law-examples mt-16" data-section="examples">
-          <h2 class="text-3xl md:text-6xl font-bold mb-8 text-gray-800">
-            Примеры из практики
-          </h2>
+          <SectionHeading title="Примеры из практики" spacing="md" />
           <div class="bg-blue-50 border-l-4 border-blue-600 p-8 rounded-lg">
             <p class="text-gray-700">
               Материалы находятся в процессе подготовки. Для получения информации о конкретных примерах 

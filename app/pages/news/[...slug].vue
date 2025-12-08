@@ -13,9 +13,7 @@
             <span>{{ article.title }}</span>
           </nav>
           
-          <h1 class="text-3xl md:text-6xl font-bold mb-6 leading-tight">
-            {{ article.title }}
-          </h1>
+          <SectionHeading :title="article.title" tag="h1" spacing="sm" container-class="text-left" />
           
           <!-- Article Meta -->
           <div class="article-meta flex flex-wrap items-center gap-4 text-sm opacity-90" data-element="meta">

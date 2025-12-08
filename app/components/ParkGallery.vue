@@ -4,10 +4,7 @@
     :data-component="componentId"
   >
     <div class="container mx-auto px-4 max-w-7xl">
-      <h2 class="text-3xl md:text-6xl text-center font-bold text-gray-400 mb-12 uppercase relative inline-block">
-        {{ title }}
-        <span class="absolute -bottom-3 left-1/2 transform -translate-x-1/2 w-16 h-2 bg-cyan-400"></span>
-      </h2>
+      <SectionHeading :title="title" spacing="lg" />
       
       <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4">
         <a 
