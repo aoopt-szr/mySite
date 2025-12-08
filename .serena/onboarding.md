@@ -49,7 +49,3 @@ mySite/
 - This project uses Nuxt auto-imports, so components and composables don't need explicit imports
 - Pages are automatically registered as routes based on file structure
 - Content files can be queried using the Content API
-
-
-
-

@@ -22,7 +22,3 @@
     </div>
   </section>
 </template>
-
-
-
-

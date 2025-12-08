@@ -41,7 +41,3 @@ replace_content = { enabled = true }
 # Enable memory system for persistent context
 enabled = true
 max_memories = 50
-
-
-
-

@@ -139,7 +139,3 @@ To set up Serena in another project:
 ---
 
 **Status**: ✅ Project configuration complete. Follow "Next Steps" to activate Serena.
-
-
-
-

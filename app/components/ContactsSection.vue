@@ -66,7 +66,3 @@
     </div>
   </section>
 </template>
-
-
-
-

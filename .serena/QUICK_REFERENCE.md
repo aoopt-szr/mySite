@@ -100,7 +100,3 @@ Your `.serena/config.toml` controls:
 - Memory settings
 
 Update it when your project structure changes significantly.
-
-
-
-
