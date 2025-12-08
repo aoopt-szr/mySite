@@ -6,7 +6,7 @@
       title="ЗАПОВЕДНЫЙ
 ВОЛОНТЕР"
       :paragraphs="heroParagraphs"
-      image-url="https://static.wixstatic.com/media/6cb40ac526f14ed38ac4ec5f3124ee48.jpg"
+      image-url="/images/heroes/volunteer-hero.jpg"
       image-alt="Волонтер в заповеднике"
       section-id="volunteer-hero"
     />

@@ -5,7 +5,7 @@
     <TwoColumnHero
       title="СПЕЦИАЛИСТУ"
       :paragraphs="heroParagraphs"
-      image-url="https://static.wixstatic.com/media/11062b_8b7b2e6b2c854ed1a0da99af85bcdc0f~mv2.jpg"
+      image-url="/images/heroes/specialist-hero.jpg"
       image-alt="Специалисты ООПТ"
       section-id="specialist-hero"
     />

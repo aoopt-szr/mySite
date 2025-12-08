@@ -5,7 +5,7 @@
     <TwoColumnHero
       title="ЭКОТУРИЗМ"
       :paragraphs="heroParagraphs"
-      image-url="https://static.wixstatic.com/media/65d40007c89944cd970accd4729abddb.jpg"
+      image-url="/images/heroes/tourism-hero.jpg"
       image-alt="Экотуризм в заповедниках"
       section-id="tourism-hero"
     />
