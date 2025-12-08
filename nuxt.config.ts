@@ -2,6 +2,12 @@
 export default defineNuxtConfig({
   compatibilityDate: '2024-04-03',
   devtools: { enabled: true },
+
+  // GitHub Pages base path (repo name)
+  app: {
+    baseURL: '/mySite/'
+  },
+
   modules: [
     '@nuxt/content',
     'nuxt-studio',
