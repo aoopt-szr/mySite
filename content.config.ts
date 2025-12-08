@@ -6,9 +6,9 @@ export default defineContentConfig({
       type: 'page',
       source: '**/*.md'
     }),
-    post: defineCollection({
+    news: defineCollection({
       type: 'page',
-      source: 'post/**/*.md',
+      source: 'news/**/*.md',
       schema: z.object({
         title: z.string(),
         description: z.string(),

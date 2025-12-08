@@ -1,5 +1,5 @@
 <template>
-  <div class="post-page" data-page="post">
+  <div class="news-article-page" data-page="news-article">
     <template v-if="article">
       <!-- Hero Section -->
       <section class="article-hero bg-gradient-to-br from-cyan-700 to-cyan-900 text-white py-16" data-section="hero">
@@ -69,12 +69,12 @@
         </div>
       </section>
 
-      <!-- Related Posts Section -->
-      <section v-if="relatedPosts?.length" class="article-related py-12 bg-gray-50" data-section="related">
+      <!-- Related News Section -->
+      <section v-if="relatedNews?.length" class="article-related py-12 bg-gray-50" data-section="related">
         <div class="container mx-auto px-4 max-w-6xl">
           <div class="flex items-center justify-between mb-8">
             <h2 class="text-2xl font-bold text-gray-800">
-              Недавние посты
+              Другие новости
             </h2>
             <NuxtLink to="/news" class="text-cyan-600 hover:text-cyan-800 font-medium">
               Смотреть все →
@@ -83,15 +83,15 @@
           
           <div class="grid md:grid-cols-3 gap-6">
             <NuxtLink 
-              v-for="post in relatedPosts" 
-              :key="post.path"
-              :to="post.path"
+              v-for="newsItem in relatedNews" 
+              :key="newsItem.path"
+              :to="newsItem.path"
               class="related-card bg-white rounded-lg overflow-hidden shadow hover:shadow-lg transition-shadow"
             >
               <div class="aspect-video bg-gradient-to-br from-cyan-500 to-cyan-700"></div>
               <div class="p-4">
                 <h3 class="font-semibold text-gray-800 line-clamp-2">
-                  {{ post.title }}
+                  {{ newsItem.title }}
                 </h3>
               </div>
             </NuxtLink>
@@ -134,15 +134,15 @@
 const route = useRoute()
 const slug = Array.isArray(route.params.slug) ? route.params.slug.join('/') : route.params.slug
 
-// Fetch the current article
-const { data: article } = await useAsyncData(`post-${slug}`, () => 
-  queryCollection('post').path(`/post/${slug}`).first()
+// Fetch the current article from 'news' collection
+const { data: article } = await useAsyncData(`news-${slug}`, () => 
+  queryCollection('news').path(`/news/${slug}`).first()
 )
 
-// Fetch related posts (excluding current)
-const { data: relatedPosts } = await useAsyncData('related-posts', async () => {
-  const posts = await queryCollection('post').order('date', 'DESC').limit(4).all()
-  return posts.filter(p => p.path !== article.value?.path).slice(0, 3)
+// Fetch related news (excluding current)
+const { data: relatedNews } = await useAsyncData('related-news', async () => {
+  const items = await queryCollection('news').order('date', 'DESC').limit(4).all()
+  return items.filter(item => item.path !== article.value?.path).slice(0, 3)
 })
 
 // Set page meta
@@ -168,7 +168,7 @@ function formatDate(dateString: string): string {
 </script>
 
 <style scoped>
-.post-page {
+.news-article-page {
   font-family: system-ui, -apple-system, sans-serif;
 }
 
@@ -217,4 +217,3 @@ function formatDate(dateString: string): string {
   color: #111827;
 }
 </style>
-

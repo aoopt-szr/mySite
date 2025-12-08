@@ -18,10 +18,7 @@
         <!-- Category Filter -->
         <div class="news-filter flex flex-wrap gap-4 mb-12" data-section="filter">
           <button class="px-6 py-2 bg-cyan-600 text-white rounded-full font-medium">
-            Все посты
-          </button>
-          <button class="px-6 py-2 bg-gray-200 text-gray-700 rounded-full font-medium hover:bg-gray-300 transition">
-            Новости
+            Все новости
           </button>
         </div>
 
@@ -94,9 +91,9 @@ useHead({
   ]
 })
 
-// Fetch posts using queryCollection from 'post' collection
+// Fetch all news using queryCollection from 'news' collection
 const { data: posts } = await useAsyncData('news-list', () => 
-  queryCollection('post').order('date', 'DESC').all()
+  queryCollection('news').order('date', 'DESC').all()
 )
 
 function formatDate(dateString: string): string {

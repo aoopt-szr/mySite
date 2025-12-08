@@ -70,9 +70,9 @@
 </template>
 
 <script setup lang="ts">
-// Fetch latest 3 posts from the 'post' collection
-const { data: posts } = await useAsyncData('home-posts', () => 
-  queryCollection('post').order('date', 'DESC').limit(3).all()
+// Fetch latest 3 news items from the 'news' collection
+const { data: posts } = await useAsyncData('home-news', () => 
+  queryCollection('news').order('date', 'DESC').limit(3).all()
 )
 
 function formatDate(dateString: string): string {
