@@ -59,12 +59,7 @@
       <div v-if="!posts?.length" class="text-center py-8">
         <p class="text-gray-500">Новости скоро появятся...</p>
       </div>
-      
-      <div class="text-center mt-12">
-        <NuxtLink to="/news" class="inline-block px-6 py-3 border border-green-600 text-green-600 font-semibold rounded hover:bg-green-600 hover:text-white transition duration-300 uppercase text-sm tracking-wider">
-          Все новости
-        </NuxtLink>
-      </div>
+    
     </div>
   </section>
 </template>

@@ -15,12 +15,6 @@
     <!-- News List Section -->
     <section class="news-content py-16 bg-white" data-section="content">
       <div class="container mx-auto px-4 max-w-6xl">
-        <!-- Category Filter -->
-        <div class="news-filter flex flex-wrap gap-4 mb-12" data-section="filter">
-          <button class="px-6 py-2 bg-cyan-600 text-white rounded-full font-medium">
-            Все новости
-          </button>
-        </div>
 
         <!-- News Grid -->
         <div class="news-grid grid md:grid-cols-2 gap-8" data-section="news-list">
