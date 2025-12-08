@@ -13,8 +13,8 @@ export default defineNuxtConfig({
     },
     repository: {
       provider: 'github',
-      owner: 'your-username', // TODO: Replace with your GitHub username
-      repo: 'your-repo', // TODO: Replace with your GitHub repository name
+      owner: 'aoopt-szr', // TODO: Replace with your GitHub username
+      repo: 'mySite', // TODO: Replace with your GitHub repository name
       branch: 'main',
       rootDir: ''
     }

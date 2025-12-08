@@ -34,13 +34,19 @@
             :data-article="article.path"
           >
             <!-- Article Image -->
-            <div class="news-card-image aspect-video bg-gradient-to-br from-cyan-500 to-cyan-700 relative">
-              <div class="absolute inset-0 flex items-center justify-center">
+            <NuxtLink :to="article.path" class="news-card-image aspect-video relative block overflow-hidden">
+              <img 
+                v-if="article.image" 
+                :src="article.image" 
+                :alt="article.title"
+                class="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+              >
+              <div v-else class="absolute inset-0 bg-gradient-to-br from-cyan-500 to-cyan-700 flex items-center justify-center">
                 <svg class="w-16 h-16 text-white/30" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 20H5a2 2 0 01-2-2V6a2 2 0 012-2h10a2 2 0 012 2v1m2 13a2 2 0 01-2-2V7m2 13a2 2 0 002-2V9a2 2 0 00-2-2h-2m-4-3H9M7 16h6M7 8h6v4H7V8z"/>
                 </svg>
               </div>
-            </div>
+            </NuxtLink>
             
             <!-- Article Content -->
             <div class="news-card-content p-6">
