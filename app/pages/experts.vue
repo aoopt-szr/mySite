@@ -31,7 +31,7 @@
           <!-- Right Column - Moose Image -->
           <div class="moose-image-wrapper">
             <div class="relative h-96 rounded-lg overflow-hidden shadow-xl">
-              <img 
+              <NuxtImg 
                 src="/images/experts/moose.png" 
                 alt="Wildlife Research"
                 class="w-full h-full object-cover"
@@ -58,7 +58,7 @@
               <!-- Profile Photo -->
               <div class="flex-shrink-0">
                 <div class="w-24 h-24 rounded-full overflow-hidden bg-gray-200">
-                  <img 
+                  <NuxtImg 
                     :src="expert.photo"
                     :alt="expert.name"
                     class="w-full h-full object-cover"

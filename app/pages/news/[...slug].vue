@@ -67,7 +67,15 @@
               :to="newsItem.path"
               class="related-card bg-white rounded-lg overflow-hidden shadow hover:shadow-lg transition-shadow"
             >
-              <div class="aspect-video bg-gradient-to-br from-cyan-500 to-cyan-700"></div>
+              <div class="aspect-video relative overflow-hidden">
+                <NuxtImg
+                  v-if="newsItem.image"
+                  :src="newsItem.image"
+                  :alt="newsItem.title"
+                  class="w-full h-full object-cover"
+                />
+                <div v-else class="w-full h-full bg-gradient-to-br from-cyan-500 to-cyan-700"></div>
+              </div>
               <div class="p-4">
                 <h3 class="font-semibold text-gray-800 line-clamp-2">
                   {{ newsItem.title }}

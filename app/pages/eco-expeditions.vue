@@ -25,7 +25,7 @@
             <div class="documents-list mt-8">
               <p class="text-base text-gray-700 mb-4">Подробности - в 
                 <a 
-                  href="/images/expeditions/Информационное письмо.docx" 
+                  :href="`${baseURL}images/expeditions/Информационное письмо.docx`" 
                   class="text-blue-600 hover:text-blue-800 underline"
                   download
                 >
@@ -35,7 +35,7 @@
               <ul class="list-disc list-inside space-y-2 text-base text-gray-700">
                 <li>
                   <a 
-                    href="/images/expeditions/Банк данных по ООПТ с возможностями приёма - 2019.docx" 
+                    :href="`${baseURL}images/expeditions/Банк данных по ООПТ с возможностями приёма - 2019.docx`" 
                     class="text-blue-600 hover:text-blue-800 underline"
                     download
                   >
@@ -44,7 +44,7 @@
                 </li>
                 <li>
                   <a 
-                    href="/images/expeditions/Банк данных по ООПТ с возможностями приёма экоэкспедиций.docx" 
+                    :href="`${baseURL}images/expeditions/Банк данных по ООПТ с возможностями приёма экоэкспедиций.docx`" 
                     class="text-blue-600 hover:text-blue-800 underline"
                     download
                   >
@@ -53,7 +53,7 @@
                 </li>
                 <li>
                   <a 
-                    href="/images/expeditions/График возможных заездов экоэкспедиций на территории ООПТ.docx" 
+                    :href="`${baseURL}images/expeditions/График возможных заездов экоэкспедиций на территории ООПТ.docx`" 
                     class="text-blue-600 hover:text-blue-800 underline"
                     download
                   >
@@ -71,7 +71,7 @@
           <!-- Right Column - Tents Image -->
           <div class="tents-image-wrapper">
             <div class="relative h-96 rounded-lg overflow-hidden shadow-xl">
-              <img 
+              <NuxtImg 
                 src="/images/expeditions/tents.png" 
                 alt="Expedition Tents in Mountains"
                 class="w-full h-full object-cover"
@@ -85,6 +85,9 @@
 </template>
 
 <script setup lang="ts">
+const config = useRuntimeConfig()
+const baseURL = config.app.baseURL
+
 useHead({
   title: 'Площадки для экспедиций | Ассоциация ООПТ Северо-Запада',
   meta: [

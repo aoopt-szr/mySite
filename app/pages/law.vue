@@ -33,7 +33,7 @@
           <!-- Right Column - Scales Image -->
           <div class="scales-image-wrapper">
             <div class="relative h-96 rounded-lg overflow-hidden shadow-xl">
-              <img 
+              <NuxtImg 
                 src="/images/law/justice.png" 
                 alt="Scales of Justice"
                 class="w-full h-full object-cover"
@@ -62,7 +62,7 @@
             class="example-card group cursor-pointer overflow-hidden rounded-lg shadow-md hover:shadow-xl transition-all duration-300 relative"
           >
             <div class="relative h-64 overflow-hidden bg-gray-200">
-              <img 
+              <NuxtImg 
                 :src="example.image"
                 :alt="example.title"
                 class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
@@ -94,7 +94,7 @@
           >
             <!-- Modal Header with Image -->
             <div class="relative h-64 md:h-80 overflow-hidden bg-gray-200">
-              <img 
+              <NuxtImg 
                 :src="selectedExample.image"
                 :alt="selectedExample.title"
                 class="w-full h-full object-cover"
@@ -128,7 +128,7 @@
               <!-- Link to PDF if available -->
               <div v-if="selectedExample.pdfLink" class="mt-6 pt-6 border-t border-gray-200">
                 <a 
-                  :href="selectedExample.pdfLink"
+                  :href="`${baseURL}${selectedExample.pdfLink.replace(/^\//, '')}`"
                   target="_blank"
                   class="inline-flex items-center text-blue-600 hover:text-blue-800 font-semibold transition-colors"
                 >
@@ -159,6 +159,9 @@
 
 <script setup lang="ts">
 import { ref } from 'vue'
+
+const config = useRuntimeConfig()
+const baseURL = config.app.baseURL
 
 useHead({
   title: 'Юридическая практика | Ассоциация ООПТ Северо-Запада',
