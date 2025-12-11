@@ -7,3 +7,4 @@ This page is rendered by **Nuxt Content**.
 - Write content in Markdown
 - Use Vue components in Markdown
 - Live edit with Nuxt Studio
+
