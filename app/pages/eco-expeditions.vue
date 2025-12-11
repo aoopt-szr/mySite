@@ -70,11 +70,11 @@
 
           <!-- Right Column - Tents Image -->
           <div class="tents-image-wrapper">
-            <div class="relative h-96 rounded-lg overflow-hidden shadow-xl">
+            <div class="relative h-96 rounded-lg overflow-hidden">
               <NuxtImg 
-                src="/images/expeditions/tents.png" 
+                src="/images/expeditions/tent.jpg" 
                 alt="Expedition Tents in Mountains"
-                class="w-full h-full object-cover"
+                class="w-full h-full object-contain"
               />
             </div>
           </div>

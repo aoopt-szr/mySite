@@ -30,11 +30,11 @@
 
           <!-- Right Column - Moose Image -->
           <div class="moose-image-wrapper">
-            <div class="relative h-96 rounded-lg overflow-hidden shadow-xl">
+            <div class="relative h-96 rounded-lg overflow-hidden">
               <NuxtImg 
-                src="/images/experts/moose.png" 
+                src="/images/experts/moose.jpg" 
                 alt="Wildlife Research"
-                class="w-full h-full object-cover"
+                class="w-full h-full object-contain"
               />
             </div>
           </div>

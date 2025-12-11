@@ -32,11 +32,11 @@
 
           <!-- Right Column - Scales Image -->
           <div class="scales-image-wrapper">
-            <div class="relative h-96 rounded-lg overflow-hidden shadow-xl">
+            <div class="relative h-96 rounded-lg overflow-hidden">
               <NuxtImg 
-                src="/images/law/justice.png" 
+                src="/images/law/justice.jpg" 
                 alt="Scales of Justice"
-                class="w-full h-full object-cover"
+                class="w-full h-full object-contain"
               />
             </div>
           </div>
