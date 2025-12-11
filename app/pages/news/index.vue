@@ -30,7 +30,7 @@
                 v-if="article.image" 
                 :src="article.image" 
                 :alt="article.title"
-                class="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                class="w-full h-full object-contain hover:scale-105 transition-transform duration-300"
               />
               <div v-else class="absolute inset-0 bg-gradient-to-br from-cyan-500 to-cyan-700 flex items-center justify-center">
                 <svg class="w-16 h-16 text-white/30" fill="none" stroke="currentColor" viewBox="0 0 24 24">
