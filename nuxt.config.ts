@@ -5,7 +5,12 @@ export default defineNuxtConfig({
 
   // GitHub Pages base path (repo name)
   app: {
-    baseURL: process.env.NODE_ENV === 'production' ? '/mySite/' : '/'
+    baseURL: process.env.NODE_ENV === 'production' ? '/mySite/' : '/',
+    head: {
+      link: [
+        { rel: 'icon', type: 'image/x-icon', href: process.env.NODE_ENV === 'production' ? '/mySite/favicon.ico' : '/favicon.ico' }
+      ]
+    }
   },
 
   modules: [
