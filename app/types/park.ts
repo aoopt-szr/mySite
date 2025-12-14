@@ -5,4 +5,12 @@ export interface Park {
   url: string
 }
 
+export interface ParkData {
+  id: number
+  name: string
+  image: string
+  tourismUrl: string
+  volunteerUrl: string
+}
+
 
