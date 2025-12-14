@@ -49,7 +49,7 @@ export const PARKS_DATA: ParkData[] = [
   },
   {
     id: 7,
-    name: 'Костомукшский заповедник (карта)',
+    name: 'Костомукшский заповедник',
     image: '/images/gallery/gallery-07.png',
     tourismUrl: 'https://www.kostzap.com/turizm-1',
     volunteerUrl: 'https://www.kostzap.com/'
