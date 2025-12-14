@@ -200,6 +200,13 @@ export const PARKS_DATA: ParkData[] = [
     image: '/images/gallery/gallery-28.png',
     tourismUrl: 'https://pt-zapovednik.ru/uslugi/',
     volunteerUrl: 'https://pt-zapovednik.ru/volonteram/'
+  },
+  {
+    id: 29,
+    name: 'Национальный парк Ладожское озеро',
+    image: '/images/gallery/gallery-29.png',
+    tourismUrl: 'https://parkladoga.ru/totravel/vidy-turov/',
+    volunteerUrl: 'https://parkladoga.ru/company/services/ekoprosveshchenie/meropriyatiya-i-proekty/'
   }
 ]
 
