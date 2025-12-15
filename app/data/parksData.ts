@@ -44,15 +44,15 @@ export const PARKS_DATA: ParkData[] = [
     id: 6,
     name: 'Костомукшский заповедник',
     image: '/images/gallery/gallery-06.png',
-    tourismUrl: 'https://www.kostzap.com/turizm-1',
-    volunteerUrl: 'https://www.kostzap.com/'
+    tourismUrl: 'https://kostzap.ru/kostomukshsky',
+    volunteerUrl: 'https://kostzap.ru/kostomukshsky'
   },
   {
     id: 7,
-    name: 'Костомукшский заповедник',
+    name: 'Калевальский национальный парк',
     image: '/images/gallery/gallery-07.png',
-    tourismUrl: 'https://www.kostzap.com/turizm-1',
-    volunteerUrl: 'https://www.kostzap.com/'
+    tourismUrl: 'https://kostzap.ru/kalevalsky',
+    volunteerUrl: 'https://kostzap.ru/kalevalsky'
   },
   {
     id: 8,
@@ -203,7 +203,7 @@ export const PARKS_DATA: ParkData[] = [
   },
   {
     id: 29,
-    name: 'Национальный парк Ладожское озеро',
+    name: 'Национальный парк Ладожские Шхеры',
     image: '/images/gallery/gallery-29.png',
     tourismUrl: 'https://parkladoga.ru/totravel/vidy-turov/',
     volunteerUrl: 'https://parkladoga.ru/company/services/ekoprosveshchenie/meropriyatiya-i-proekty/'
