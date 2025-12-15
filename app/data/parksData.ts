@@ -214,6 +214,27 @@ export const PARKS_DATA: ParkData[] = [
     image: '/images/gallery/gallery-30.png',
     tourismUrl: 'https://www.plesheevo-lake.ru/',
     volunteerUrl: 'https://www.plesheevo-lake.ru/'
+  },
+    {
+    id: 31,
+    name: 'Национальный парк Таганай',
+    image: '/images/gallery/gallery-31.png',
+    tourismUrl: 'https://www.taganay.org/',
+    volunteerUrl: 'https://www.taganay.org/'
+  },
+    {
+    id: 32,
+    name: 'Национальный парк Тульские Засеки',
+    image: '/images/gallery/gallery-32.png',
+    tourismUrl: 'https://tzaseki.ru/',
+    volunteerUrl: 'https://tzaseki.ru/'
+  },
+    {
+    id: 33,
+    name: 'ЭкоЦентр Заповедники',
+    image: '/images/gallery/gallery-33.png',
+    tourismUrl: 'https://www.wildnet.ru/',
+    volunteerUrl: 'https://www.wildnet.ru/'
   }
 ]
 
