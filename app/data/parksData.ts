@@ -207,6 +207,13 @@ export const PARKS_DATA: ParkData[] = [
     image: '/images/gallery/gallery-29.png',
     tourismUrl: 'https://parkladoga.ru/totravel/vidy-turov/',
     volunteerUrl: 'https://parkladoga.ru/company/services/ekoprosveshchenie/meropriyatiya-i-proekty/'
+  },
+  {
+    id: 30,
+    name: 'Национальный парк Плещеево Озеро',
+    image: '/images/gallery/gallery-30.png',
+    tourismUrl: 'https://www.plesheevo-lake.ru/',
+    volunteerUrl: 'https://www.plesheevo-lake.ru/'
   }
 ]
 
