@@ -3,12 +3,12 @@ export default defineNuxtConfig({
   compatibilityDate: '2024-04-03',
   devtools: { enabled: false },
 
-  // GitHub Pages base path (repo name)
+  // Custom domain - no base path needed
   app: {
-    baseURL: process.env.NODE_ENV === 'production' ? '/mySite/' : '/',
+    baseURL: '/',
     head: {
       link: [
-        { rel: 'icon', type: 'image/x-icon', href: process.env.NODE_ENV === 'production' ? '/mySite/favicon.ico' : '/favicon.ico' }
+        { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
       ]
     }
   },
